@@ -16,10 +16,10 @@ root_agent = Agent(
     description="Tool agent",
     instruction="""
     You are a helpful assistant that can use the following tools:
-    - google_search
+    - get_current_time
     """,
     # only one built in tool at a time
-    tools=[google_search],
-    # tools=[get_current_time],
+    # tools=[google_search],
+    tools=[get_current_time],
     # tools=[google_search, get_current_time], # <--- Doesn't work
 )
